@@ -15,12 +15,14 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Handlee&family=Luckiest+Guy&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Handlee&family=Luckiest+Guy&family=Nanum+Pen+Script&family=Roboto:wght@300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Luckiest+Guy&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 
 </head>
 <body>
 	<!-- Home/Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top px-5 py-0">
 	  <a class="navbar-brand fontguy" id="navlogo" href="#">Mike.</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -48,9 +50,15 @@
 	<div class="jumbotron jumbotron-fluid">
 	  <div class="container">
 	    <div class="row" id="jumbocolor">
-	    	<div class="col-lg-4 col-md-12 fontguy jumbocol1">
-	    		<h1>Hi! I'm Michael Mandigma!</h1>
-	    		<h4>I am a full-stack Web Developer, a Recruiter and also, a Credentialing Specialist.</h4>
+	    	<div class="col-lg-4 col-md-12 jumbocol1">
+	    		<h2 class="fontguy jumbocolout">Hi!</h2>
+	    		<h1 class="fontguy jumbocolout"> I'm Mike</h1>
+	    		<h6 class="fonthandlee text-white">I am a full-stack Web Developer, a Recruiter and also, a Credentialing Specialist.</h6>
+	    		<div>
+		    		<a class="btn btn-home py-1 px-3 fontnanum" href="#" role="button">
+		    			Click Here to Know Me More
+		    		</a>
+	    		</div>
 	    	</div>
 	    	<div class="col-lg-8 col-md-12 fontguy photojumbo">
 	    		<img src="./images/hello.png" class="jimage">
@@ -66,8 +74,8 @@
  -->
 	<!-- Tools Used: -->
 	<div class="container-fluid tools1">
-		<h1 class="fonthandlee">Tools Used:</h1>
-		<div class="row d-flex justify-content-center">
+		<h1 class="fontguy">Tools Used:</h1>
+		<div class="row d-flex justify-content-center tools2">
 			<img src="./images/logo-bootstrap.png" class="iconpack">
 			<img src="./images/logo-css3.png" class="iconpack">
 			<img src="./images/logo-git.png" class="iconpack">
@@ -77,21 +85,55 @@
 		</div>
 	</div>
 
-	<!-- About -->
+	<!-- About Me-->
 
 	<div class="jumbotron2 jumbotron-fluid aboutme1">
 			<h1 class="fontguy text-center">About Me:</h1>
-		<div class="row aboutme">
-			<div class="col-lg-8 col-md-12 text-center">
-				<h3 class="fontnanum">Hi Again! I am Michael Mandigma, an Experienced Talent Acquisition Specialist and Credentialing Specializing in Healthcare with a demonstrated history of working in the staffing and recruiting industry. Skilled in AutoCAD, Computer Repair, Technical Recruiting, and Healthcare Credentialing. Strong human resources professional with a Bachelor of Science focused in Computer Engineering from AMA University. My hobbies include: Gaming, Cooking, a little bit of Videoraphy and also Photography</h3>
+		<div class="row aboutme d-flex flex-column flex-sm-column flex-lg-row flex">
+			<div class="col">
+				<img src="./images/pic.jpg" class="rounded-circle aboutpic mt-5">
+				<div class="logosul d-flex justify-content-center">
+					<a href="" class="logos" id="fblogo"><img src="https://img.icons8.com/ios/144/000000/facebook-new.png"/></a>
+					<a href="" class="logos" id="lilogo"><img src="https://img.icons8.com/ios/144/000000/linkedin.png"/></a>
+					<a href="" class="logos" id="ghlogo"><img src="https://img.icons8.com/ios/144/000000/github.png"/></a>
+				</div>
 			</div>
-			<div class="col-lg-4 col-md-12">
-				<img src="./images/pic.jpg" class="rounded-circle aboutpic">
+			<div class="col align-items-center text-center colabout">
+				<h3 class="fontnanum" id="j2h3">Hi Again! I am Michael Mandigma, an Experienced Talent Acquisition Specialist and Credentialing Specializing in Healthcare with a demonstrated history of working in the staffing and recruiting industry. Skilled in AutoCAD, Computer Repair, Technical Recruiting, and Healthcare Credentialing. Strong human resources professional with a Bachelor of Science focused in Computer Engineering from AMA University. My hobbies include: Gaming, Cooking, a little bit of Videoraphy and also Photography</h3>
 			</div>
 		</div>
 	</div>
 
+	<!-- Gallery -->
 
+	<div class="container-fluid">
+		<h1 class="congal fontguy text-center">Gallery</h1>
+		<div class="row rowgal">
+			<div class="col py-1">
+				<img src="./images/g1.jpg" alt="">
+				<img src="./images/g7.jpg" alt="">
+				<img src="./images/g14.jpg" alt="">
+				<img src="./images/g3.jpeg" alt="">
+				<img src="./images/g15.jpg" alt="">
+				<img src="./images/g5.jpg" alt="">
+			</div>
+			<div class="col py-1">
+				<img src="./images/g6.jpg" alt="">
+				<img src="./images/g2.jpg" alt="">
+				<img src="./images/g8.jpeg" alt="">
+				<img src="./images/g10.jpg" alt="">
+				<img src="./images/g16.jpg" alt="">
+			</div>
+			<div class="col py-1">
+				<img src="./images/g11.jpg" alt="">
+				<img src="./images/g12.jpg" alt="">
+				<img src="./images/g13.jpg" alt="">
+				<img src="./images/g9.jpg" alt="">
+				<img src="./images/g4.jpg" alt="">
+			</div>
+		</div>
+		
+	</div>
 
 
 

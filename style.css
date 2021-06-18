@@ -18,15 +18,22 @@
 }
 .fonthandlee {
 	font-family: 'Handlee', cursive;
+	color: whitesmoke;
+	-webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #A455FF;
 }
 
 .fontnanum {
 	font-family: 'Nanum Pen Script', cursive;
 }
 
+.fontroboto {
+	font-family: 'Roboto', sans-serif;
+}
+
 #navlogo {
 	font-size: 45px;
-	color: #C9A0DC;
+	color: white;
 	padding-left: 10vh;
 	-webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #A455FF;
@@ -53,10 +60,21 @@
 }
 
 #jumbocolor {
+    text-align: center;
+}
+
+.jumbocolout {
 	color: white;
 	-webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #A455FF;
-    text-align: center;
+}
+
+.btn-home {
+	background-color: #d1b4fa;
+	padding: 0;
+	color: white;
+	border-radius: 20px;
+	font-size: 20px;
 }
 
 .photojumbo {
@@ -75,21 +93,108 @@
 	font-size: 25px;
 	margin-top: 15px;
 	margin-bottom: -10px;
+	color: #D198F9;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #A455FF;
 }
 
 
 .jumbotron2 {
-	background-color: #FFBAFF;
+	background-color: #000098;
 	background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
 	background-position: center;
 	margin: 1px;
 	padding: 5vh;
 }
 
+.jumbotron2 h1 {
+	color: white;
+}
+
+.tools2 {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.jimage {
+	width: auto;
+}
+
+.aboutpic {
+	box-shadow: white;
+	border:2px solid whitesmoke;
+}
+
+#j2h3 {
+	color: white;
+}
+
+.colabout {
+	display: flex;
+	justify-content: center;
+}
 
 
+.aboutpic {
+	width: 20%;
+	margin-bottom: 20px;
+}
 
 
+.logosul {
+	display: flex;
+	justify-content: center;
+}
+
+.logosul li {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+}
+
+.logos img {
+	width: 30px;
+	height: 30px;
+	margin-bottom: 25px;
+}
+
+.rowgal {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.rowgal .col {
+	flex: 100%;
+	width: auto;
+	overflow: hidden;
+	padding: 0 4px;
+	height: 100%;
+}
+
+.rowgal .col img {
+	margin-top: 2%;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	filter: grayscale(1) brightness(0.5);
+	border-radius: 5px;
+	transition: 0.3s linear;
+}
+
+.rowgal .col img:hover {
+	filter: grayscale(0) brightness(1);
+}
+
+.congal {
+	margin-top: 15px;
+	margin-bottom: 5px;
+	color: #360ba3;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #A455FF;
+}
 
 
 
@@ -104,7 +209,8 @@
 
 @media (min-width: 320px) {
 	.jimage {
-		width: 250px;
+		width: 40vh;
+		margin-top: 10vh;
 	}
 	#navlogo{
 		padding-left: 1vh;
@@ -113,7 +219,7 @@
 		align-items: center;
 	}
 	.jumbotron {
-		height: 70vh;
+		height: 100vh;
 		padding-top: 14vh;
 	}
 	.iconpack {
@@ -125,42 +231,57 @@
   	margin-right: auto;
   	width: 50%;
 	}
+	.jumbocol1 {
+		padding-top: 10vh;
+	}
 
 }
 
 
 @media (min-width: 375px) {
-	.jimage {
-		width: 325px;
-		height: auto;
-	}
 	#navlogo{
 		padding-left: 1vh;
 	}
 	.jumbotron {
-		height: 70vh;
-		padding-top: 14vh;
+		padding-top: 12vh;
 	}
 	.iconpack {
 		width: 88px;
 	}
-
 }
 
 @media (min-width: 425px) {
 	.jimage {
-		width: 370px;
-		height: auto;
+		width: 45vh;
 	}
 	.iconpack {
 		width: 100px;
 	}
+	.jumbotron {
+		padding-top: 12vh;
+	}
+	.logos img {
+		width: 45px;
+		height: 45px;
+	}
 }
+
+@media (min-width: 500px) {
+	.jimage {
+		width: 55vh;
+}
+
+@media (min-width: 625px) {
+	.jimage {
+		width: 65vh;
+		margin-top: 5vh;
+}
+
 
 @media (min-width: 768px) {
 	.jimage {
-		width: 650px;
-		height: auto;
+		width: 80vh;
+		margin-top: 30px;
 	}
 	.navbar-nav {
 		align-items: center;
@@ -175,27 +296,26 @@
 		font-size: 3vh;
 	}
 	.jumbotron {
-		height: 100vh;
-		padding-top: 20vh;
+		padding-top: 7vh;
 	}
-	.aboutpic {
-	width: 30%;
+	.logos img {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 30px;
+	}
+	.rowgal .col {
+		flex: 50%;
 	}
 }
 
-
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
+	#jumbocolor {
+    align-items: center;
+    direction: flex;
+    text-align: right;
+	}
 	.jimage {
-		padding-top: 10px;
-	}
-
-	#navlogo{
-		padding-left: 10vh;
-	}
-	.jumbocol1 {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		margin-top: 0;
 	}
 	.jumbocol1 h1 {
 		font-size: 6vh;
@@ -204,25 +324,25 @@
 		font-size: 3vh;
 	}
 	.jumbotron {
-		height: 72vh;
+		height: 77vh;
 		padding-top: 16vh;
 	}
-	.iconpack {
-		width: 150px;
+	#navlogo {
+		padding-left: 10vh;
 	}
-	.aboutme {
-	text-align: right;
+	#j2h3 {
+		font-size: 150%;
 	}
-	.aboutpic {
-	width: 90%;
+	.rowgal .col {
+		flex: 33.3%;
 	}
-	
 }
+
+
 
 @media (min-width: 1200px) {
 	.jimage {
-		width: 550px;
-		height: auto;
+		width: 80vh;
 	}
 	.jumbocol1 h1 {
 		font-size: 8vh;
@@ -231,12 +351,28 @@
 		font-size: 3.5vh;
 	}
 	.jumbotron {
-		height: 75vh;
 		padding-top: 15vh;
 	}
 	.aboutpic {
-	width: 60%;
+		width: 60%;
+	}
+	#j2h3 {
+		font-size: 180%;
+	}
+	.logos img {
+		width: 70px;
+		height: 70px;
 	}
 }
 
+@media (min-width: 1250px) {
+	#j2h3 {
+	font-size: 200%;
+	}
+}
 
+@media (min-width: 1440px) {
+	#j2h3 {
+	font-size: 250%;
+	}
+}
