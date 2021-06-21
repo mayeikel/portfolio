@@ -95,7 +95,9 @@
 	background-color: #000098;
 	background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
 	background-position: center;
-	padding: 5vh;
+	padding-left: 5vh;
+	padding-right: 5vh;
+	padding-bottom: 5vh;
 }
 
 .jumbotron2 h1 {
@@ -311,7 +313,9 @@
 	font-family: 'Handlee', cursive;
 }
 
-
+.jumbotron2, .conproj, .concont {
+	padding-top: 12vh;
+}
 
 
 
