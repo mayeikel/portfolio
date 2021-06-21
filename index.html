@@ -23,23 +23,23 @@
 <body>
 	<!-- Home/Navbar -->
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top px-5 py-0">
-	  <a class="navbar-brand fontguy" id="navlogo" href="#">Mike.</a>
+	  <a class="navbar-brand fontguy" id="navlogo" href="#homebutton">Mike.</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 	  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 	    <ul class="navbar-nav">
 	      <li class="nav-item">
-	        <a class="nav-link fontguy navitems" href="#">Home <span class="sr-only">(current)</span></a>
+	        <a class="nav-link fontguy navitems" href="#homebutton">Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link fontguy navitems" href="#">About</a>
+	        <a class="nav-link fontguy navitems" href="#aboutbutton">About</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link fontguy navitems" href="#">Projects</a>
+	        <a class="nav-link fontguy navitems" href="#projectbutton">Projects</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link fontguy navitems" href="#">Contact</a>
+	        <a class="nav-link fontguy navitems" href="#contactbutton">Contact</a>
 	      </li>
 	    </ul>
 	  </div>
@@ -47,7 +47,7 @@
 
 	<!-- Home/Landing Page -->
 
-	<div class="jumbotron jumbotron-fluid">
+	<div class="jumbotron jumbotron-fluid" id="homebutton">
 	  <div class="container">
 	    <div class="row" id="jumbocolor">
 	    	<div class="col-lg-4 col-md-12 jumbocol1">
@@ -55,23 +55,18 @@
 	    		<h1 class="fontguy jumbocolout"> I'm Mike</h1>
 	    		<h6 class="fonthandlee text-white">I am a full-stack Web Developer, a Recruiter and also, a Credentialing Specialist.</h6>
 	    		<div>
-		    		<a class="btn btn-home py-1 px-3 fontnanum" href="#" role="button">
+		    		<a class="btn btn-home py-1 px-3 fontnanum" href="#aboutbutton" role="button">
 		    			Click Here to Know Me More
 		    		</a>
 	    		</div>
 	    	</div>
 	    	<div class="col-lg-8 col-md-12 fontguy photojumbo">
-	    		<img src="./images/hello.png" class="jimage">
+	    		<img src="./images/hello.png" class="jimage img-fluid xs-pt-2">
 	    	</div>
 	    </div>
 	  </div>
 	</div>
 
-	<!-- <div class="container-fluid">
-		<div class="parallax">
-		</div>
-	</div>
- -->
 	<!-- Tools Used: -->
 	<div class="container-fluid tools1">
 		<h1 class="fontguy">Tools Used:</h1>
@@ -87,15 +82,15 @@
 
 	<!-- About Me-->
 
-	<div class="jumbotron2 jumbotron-fluid aboutme1">
+	<div class="jumbotron2 jumbotron-fluid aboutme1" id="aboutbutton">
 			<h1 class="fontguy text-center">About Me:</h1>
 		<div class="row aboutme d-flex flex-column flex-sm-column flex-lg-row flex">
 			<div class="col">
 				<img src="./images/pic.jpg" class="rounded-circle aboutpic mt-5">
 				<div class="logosul d-flex justify-content-center">
-					<a href="" class="logos" id="fblogo"><img src="https://img.icons8.com/ios/144/000000/facebook-new.png"/></a>
-					<a href="" class="logos" id="lilogo"><img src="https://img.icons8.com/ios/144/000000/linkedin.png"/></a>
-					<a href="" class="logos" id="ghlogo"><img src="https://img.icons8.com/ios/144/000000/github.png"/></a>
+					<a href="https://www.facebook.com/miikel.mandigma/" class="logos" id="fblogo"><img src="https://img.icons8.com/ios/144/000000/facebook-new.png"/></a>
+					<a href="https://www.linkedin.com/in/michael-mandigma/" class="logos" id="lilogo"><img src="https://img.icons8.com/ios/144/000000/linkedin.png"/></a>
+					<a href="https://github.com/mayeikel" class="logos" id="ghlogo"><img src="https://img.icons8.com/ios/144/000000/github.png"/></a>
 				</div>
 			</div>
 			<div class="col align-items-center text-center colabout">
@@ -106,45 +101,212 @@
 
 	<!-- Gallery -->
 
-	<div class="container-fluid">
+	<div class="container-fluid congalcon">
 		<h1 class="congal fontguy text-center">Gallery</h1>
-		<div class="row rowgal">
-			<div class="col py-1">
-				<img src="./images/g1.jpg" alt="">
-				<img src="./images/g7.jpg" alt="">
-				<img src="./images/g14.jpg" alt="">
-				<img src="./images/g3.jpeg" alt="">
-				<img src="./images/g15.jpg" alt="">
-				<img src="./images/g5.jpg" alt="">
-			</div>
-			<div class="col py-1">
-				<img src="./images/g6.jpg" alt="">
-				<img src="./images/g2.jpg" alt="">
-				<img src="./images/g8.jpeg" alt="">
-				<img src="./images/g10.jpg" alt="">
-				<img src="./images/g16.jpg" alt="">
-			</div>
-			<div class="col py-1">
-				<img src="./images/g11.jpg" alt="">
-				<img src="./images/g12.jpg" alt="">
-				<img src="./images/g13.jpg" alt="">
-				<img src="./images/g9.jpg" alt="">
-				<img src="./images/g4.jpg" alt="">
-			</div>
+		<div id="gallerybutton">
+		  <a class="btn btn-home2 fontnanum py-1 px-3 text" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Click Here to See</a>
+		</div>
+		<div class="row">
+		  <div class="col">
+		    <div class="collapse multi-collapse" id="multiCollapseExample1">
+		      <div class="card card-body mt-2 mb-5 colgate">
+		        <div class="row rowgal">
+					<div class="col py-1 col111">
+						<img src="./images/g1.jpg" alt="">
+						<img src="./images/g7.jpg" alt="">
+						<img src="./images/g14.jpg" alt="">
+						<img src="./images/g3.jpeg" alt="">
+						<img src="./images/g15.jpg" alt="">
+						<img src="./images/g5.jpg" alt="">
+					</div>
+					<div class="col py-1">
+						<img src="./images/g6.jpg" alt="">
+						<img src="./images/g2.jpg" alt="">
+						<img src="./images/g8.jpeg" alt="">
+						<img src="./images/g10.jpg" alt="">
+						<img src="./images/g16.jpg" alt="">
+					</div>
+					<div class="col py-1">
+						<img src="./images/g4.jpg" alt="">
+						<img src="./images/g12.jpg" alt="">
+						<img src="./images/g13.jpg" alt="">
+						<img src="./images/g9.jpg" alt="">
+						<img src="./images/g11.jpg" alt="">
+					</div>
+				</div>
+		      </div>
+		    </div>
+		  </div>
 		</div>
 		
 	</div>
 
+	<!-- Experience -->
+
+	<div class="container-fluid conexp">
+		<div class="container conexpint">
+			<div class="row">
+				<div class="col" id="expcol1">
+					<div class="card cardexp">
+					  <div class="card-header">
+					    Education:
+					  </div>
+					  <div class="card-body">
+					  	<div class="expbody">
+						    <h5 class="card-title">Bachelor of Science in Computer Engineering</h5>
+						    <h6 class="card-title">AMA Computer College - Batangas</h6>
+						    <h6 class="card-title">June 2014 - May 2018</h6>
+							    <ul class="pl-3 expli">
+							    	<li>ICES Secretary (2017-2018)</li>
+							    	<li>Student Council Batch Representative (2015-2016; 2017-2018)</li>
+							    	<li>Graduated with High Honors</li>
+							    	<li>Dean's Lister (All Years)</li>
+							    </ul>
+					    </div>
+					    <div class="expbody">
+						    <h5 class="card-title">Full-Stack Web Development Trainee</h5>
+						    <h6 class="card-title">Zuitt Coding Bootcamp</h6>
+						    <h6 class="card-title">June 2021 - September 2021</h6>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="col" id="expcol2">
+					<div class="card cardexp">
+					  <div class="card-header">
+					    Work Experience:
+					  </div>
+					  <div class="card-body expbody">
+					  	<div class="mb-5 ">
+						    <h5 class="card-title">Internet Researcher / Credentialing Specialist</h5>
+						    <h6 class="card-title">PSG Global Solutions</h6>
+						    <h6 class="card-title">June 2018 - May 2021</h6>
+					    </div>
+					    <div>
+						    <h5 class="card-title">Regional Operations Department - Intern</h5>
+						    <h6 class="card-title">Globe Telecoms Batangas Host</h6>
+						    <h6 class="card-title">February 2018 - March 2018</h6>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Projects -->
+
+	<div class="container-fluid conproj" id="projectbutton">
+		<h1 class="fontguy text-center text-white py-3">Projects</h1>
+		<div class="row rowproj d-flex">
+			<div class="col-lg-4" id="projcol1">
+				<div class="card cardexp2">
+					  <div class="card-header text-center">
+					  	<img class="img-fluid py-3" src="./images/capstone1.png">
+					    <p>My Portfolio - Capstone 1</p>
+					  </div>
+					  <div class="card-body expbody2">
+					  	<p>My 1st Capstone Project in Zuitt Bootcamp. I used HTML, CSS and Bootstrap only in this site.</p>
+					  </div>
+				</div>
+			</div>
+			<div class="col-lg-4" id="projcol2">
+					<div class="card cardexp2">
+					  <div class="card-header text-center">
+					  	<img class="img-fluid py-3" src="./images/capstone2.png">
+					  	 <p>2nd Site - Capstone 2</p>
+					  </div>
+					  <div class="card-body expbody2">
+					  	<p>My 2nd Capstone in Zuitt Bootcamp.</p>
+					  </div>
+					</div>
+			</div>
+			<div class="col-lg-4" id="projcol3">
+					<div class="card cardexp2">
+					  <div class="card-header text-center">
+					    <img class="img-fluid py-3" src="./images/capstone3.png">
+					     <p>3rd Site - Capstone 3</p>
+					  </div>
+					  <div class="card-body expbody">
+					  	<p>My 2nd Capstone in Zuitt Bootcamp.</p>
+					  </div>
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Contact Me -->
+
+	<div class="container-fluid concont" id="contactbutton">
+		<div id="">
+			<h1 class="fontguy text-white text-center pt-3">Contact Me!</h1>
+		</div>
+			<div class="row rowcont">
+				<div class="col-lg-6 p-5" id="colcont1">
+					<form class="fonthandlee">
+						<div class="form-group">
+							<label for="exampleInputName1">Full Name:</label>
+						  	<input type="text" class="form-control" id="exampleInputName1">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Email address</label>
+						  	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-group">
+							<label for="exampleInputNumber1">Number:</label>
+						  	<input type="text" class="form-control" id="exampleInputNumber1">
+						</div>
+						<div class="form-group">
+						    <label for="exampleTextarea1">Message (Optional):</label>
+						    <textarea class="form-control" id="exampleTextarea1" rows="3"></textarea>
+						  </div>
+						<button type="submit" class="btn btn-home2 fontnanum py-1 px-3 text">Send</button>
+					</form>
+				</div>
+				<div class="col-lg-6 p-5" id="colcont2">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d197.1302650327886!2d121.1094124019586!3d13.734262600563307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfil!2sph!4v1624258140855!5m2!1sfil!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="img-fluid maps"></iframe>
+				</div>
+			</div>
+	</div>
+
+	<!-- Footer -->
 
 
+	<div class="footer">
+		<div class="container-fluid contfoot">
+			<div class="row rowfoot fonthandlee">
+				<div class="col-lg-4 p-3" id="colfoot1">
+					<div class="container confoot1 text-white">
+						<h2 class="fontguy">Mike</h2>
+						<p><a href="#homebutton" class="footp">Home</a></p>
+						<p><a href="#aboutbutton"class="footp">About</a></p>
+						<p><a href="#projectbutton" class="footp">Project</a></p>
+						<p><a href="#contactbutton" class="footp">Contact</a></p>
+					</div>
+				</div>
+				<div class="col-lg-4 p-3" id="colfoot2">
+					<div class="container confoot2">
+						<p class="footp">Email: <a href="mayeikel@gmail.com" class="footp">mayeikel@gmail.com</a></p>
+						<p class="footp">Contact #: 09157582675</p>
+						<p class="footp">Address: Conde Labac, Batangas City</p>
+					</div>
+				</div>
+				<div class="col-lg-4 p-3" id="colfoot3">
+					<div class="container confoot3">
+					<h4>Connect via:</h4>
+						<a href="https://www.facebook.com/miikel.mandigma/" class="logos" id="fblogo"><img src="https://img.icons8.com/ios/144/000000/facebook-new.png"/></a>
+						<a href="https://www.linkedin.com/in/michael-mandigma/" class="logos" id="lilogo"><img src="https://img.icons8.com/ios/144/000000/linkedin.png"/></a>
+						<a href="https://github.com/mayeikel" class="logos" id="ghlogo"><img src="https://img.icons8.com/ios/144/000000/github.png"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-
-
-
-
-
-
-
+	<div class="container-fluid text-center my-1">
+		<span class="underfoot">&copy; 2021 Michael Mandigma | All Rights Reserved.</span>
+	</div>
 
 
 

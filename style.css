@@ -4,14 +4,6 @@
 	box-sizing: border-box;
 }
 
-/*.parallax {
-	background: url("./food.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	height: 75vh;
-}
-*/
 .fontguy {
 	font-family: 'Luckiest Guy', cursive;
 
@@ -52,7 +44,7 @@
 }
 
 
-.jumbotron {
+.jumbotron, .congalcon {
 	background-color: #A455FF;
 	background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
 	background-position: center;
@@ -103,7 +95,6 @@
 	background-color: #000098;
 	background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
 	background-position: center;
-	margin: 1px;
 	padding: 5vh;
 }
 
@@ -158,6 +149,7 @@
 	width: 30px;
 	height: 30px;
 	margin-bottom: 25px;
+	
 }
 
 .rowgal {
@@ -189,16 +181,135 @@
 }
 
 .congal {
-	margin-top: 15px;
-	margin-bottom: 5px;
-	color: #360ba3;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	color: #6c3ec2;
 	-webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #A455FF;
 }
 
 
+.conexp {
+	background-color: #DE87FF;
+	background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+}
+
+.conexp .row .col {
+	flex: 100%;
+	text-align: center;
+}
+
+.cardexp {
+	opacity: 0.6;
+	background-color: #ffffff;
+}
+
+.expbody {
+	display: flex;
+	flex-direction: column;
+}
+
+.colgate {
+	background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+}
+
+.expli {
+	text-align: left;
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+}
+
+.expli {
+	align-items: center;
+}
+
+#expcol1, #projcol1, #projcol2, #projcol3 {
+	margin-bottom: 12px;
+}
+
+.card-title, ul, .card-header{
+	font-weight: bold;
+	color: #000000;
+	font-family: 'Handlee', cursive;
+}
+
+.conexp {
+	height: 980px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#expcol1, #expcol2 {
+	display: flex;
+	align-items: center;
+}
+
+.btn-home2 {
+	background-color: #d1b4fa;
+	padding: 0;
+	color: white;
+	border-radius: 20px;
+	font-size: 20px;
+	border-color: #6c3ec2;
+}
+
+#gallerybutton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 2vh;
+}
+
+.conproj {
+	background-color: #000098;
+	background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+}
 
 
+.maps {
+	height: 80vh;
+}
+
+.concont {
+	background-color: #A455FF;
+	background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+}
+
+#colcont1, #colcont2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contfoot {
+	background-color: #000098;
+	background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+}
+
+#confoot1, #colfoot2,{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.confoot1 h2 {
+	color: white;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #A455FF;
+}
+
+.footp {
+	color: inherit;
+}
+
+.underfoot {
+	font-family: 'Handlee', cursive;
+}
 
 
 
@@ -248,6 +359,9 @@
 	.iconpack {
 		width: 88px;
 	}
+	.conexp {
+		height: 980px;
+	}
 }
 
 @media (min-width: 425px) {
@@ -263,6 +377,10 @@
 	.logos img {
 		width: 45px;
 		height: 45px;
+	}
+	#expcol1, #expcol2 {
+		display: flex;
+		justify-content: center;
 	}
 }
 
@@ -281,7 +399,7 @@
 @media (min-width: 768px) {
 	.jimage {
 		width: 80vh;
-		margin-top: 30px;
+		padding-top: 10px;
 	}
 	.navbar-nav {
 		align-items: center;
@@ -303,9 +421,11 @@
 		height: 60px;
 		margin-bottom: 30px;
 	}
-	.rowgal .col {
-		flex: 50%;
+
+	.conexp {
+		height: 810px;
 	}
+
 }
 
 @media (min-width: 992px) {
@@ -335,6 +455,33 @@
 	}
 	.rowgal .col {
 		flex: 33.3%;
+	}
+	.conexp .row .col {
+		flex: 50%;
+		text-align: left;
+	}
+	.conexp {
+		display: flex;
+		align-items: center;
+	}
+
+	#expcol1, #expcol2 {
+		display: block;
+	}
+	.conexp {
+		height: 490px;
+	}
+	.maps {
+		height: 65vh;
+	}
+	.confoot1 {
+		padding-left: 8vh;
+	}
+	.confoot2 {
+		padding-top: 5vh;
+	}
+	.confoot3 {
+		padding-top: 5vh;
 	}
 }
 
